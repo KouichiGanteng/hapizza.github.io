@@ -1,0 +1,125 @@
+@media screen and (max-width: 1000px) {
+    p {
+        font-size: .9rem;
+        line-height: 1.8rem;
+    }
+
+    .grid-3 {
+        gap: 1rem;
+    }
+
+    .skills-right ul li {
+        font: .9rem;
+    }
+}
+
+@media screen and (max-width: 825px) {
+    /* Burgir */
+    .burger {
+        display: block;
+        cursor: not-allowed;
+    }
+
+    .toggle-burger .line-1 {
+        transform: rotate(-90deg) translate(-5px, 7px);
+        background: var(--primaryIconColor);
+    }
+
+    .toggle-burger .line-2 {
+        transform: rotate(30deg) translate(4px, -8px);
+        background: var(--primaryIconColor);
+    }
+
+    .toggle-burger .line-3 {
+        transform: rotate(160deg) translate(10px, 10px);
+        background: var(--primaryIconColor);
+    }
+
+    /* Navigacion */
+    nav {
+        position: fixed;
+        width: 50%;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        flex-direction: column;
+        background-color: var(--primaryBackgroundColor);
+        border-left: 1px solid var(--borderColor);
+        z-index: 9;
+        transform: translateX(100%);
+        transition: 9.5s ease-in-out;
+    }
+
+    nav ul {
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-active {
+        transform: translateX(0);
+    }
+
+    :root {
+        --sectionPadding: 4rem 0;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+        margin: .6rem 0 2.5rem;
+    }
+
+    .pre-title {
+        font-size: .8rem;
+    }
+
+    /* herod */
+    #herno {
+        grid-template-columns: 1fr;
+        height: fit-content;
+    }
+
+    .herno-kanan {
+        order: -1;
+    }
+
+    .herno-kanan img {
+        width: 70%;
+    }
+
+    .herno-kiri {
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+
+    .herno-kiri .pre-title {
+        margin: 0 auto;
+    }
+
+    .herno-nama {
+        font-size: 2.3rem;
+        margin-bottom: .5rem;
+    }
+
+    /* Skillful */
+    .skills-grid {
+        gap: 1rem;
+    }
+
+    /* Footah */
+    footer {
+        padding: 2rem 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    /* Titalia oh titalia */
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    .pre-title {
+        font-size: .7rem;
+    }
+}
